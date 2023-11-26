@@ -1,0 +1,21 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {}
+  },
+  "compilerOptions": {
+    "allowImportingTsExtensions":true,
+    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+  },
+  "include": [
+    "**/*.ts",
+  ],
+  "exclude": ["node_modules"]
+}
